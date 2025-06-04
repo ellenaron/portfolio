@@ -45,7 +45,7 @@ main {
     padding: 20px;
     border-radius: 25px;
     box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.2);
-    background-color: #eaeaea;
+    font-size: larger;
 }
 
 .card img {
@@ -62,18 +62,74 @@ main {
 }
 
 .ertekeles > div {
-    background-color: #eaeaea;
     border-radius: 25px;
     padding: 20px;
-    box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.2);
     margin-bottom: 30px;
     font-size: larger;
 }
 
-.ertekeles > div > .graph {
-    width: 200px;
-    height: 200px;
+.ertekeles > div .graph {
+    width: 150px;
+    height: 150px;
     background-color: aqua;
     float: left;
     border-radius: 50%;
+    margin-right: 20px;
+}
+
+.osszegzes {
+    padding: 30px;
+    font-size: larger;
+}
+
+@media (min-width:1200px) {
+    .munkak {
+        grid-template-areas: 
+            "one one two two three three"
+            "four four four five five five";
+    }
+}
+
+@media (max-width: 800px) {
+    .osszegzes {
+        font-size: large;
+    }
+
+    .ertekeles > div {
+        font-size: large;
+    }
+
+    .card {
+        font-size: large;
+    }
+}
+
+@media (max-width: 700px) {
+    .munkak {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 450px) {
+    .osszegzes {
+        font-size: medium;
+    }
+
+    .ertekeles > div {
+        font-size: medium;
+    }
+
+    .card {
+        font-size: medium;
+    }
+
+    .ertekeles > div .graph {
+        float: none;
+        width: 100%;
+        aspect-ratio: 1/1;
+    }
 }
