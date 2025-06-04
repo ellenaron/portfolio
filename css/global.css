@@ -7,19 +7,29 @@ html {
 body {
     margin: 0px;
     min-height: 100vh;
-    background-color: #fefefe;
+    background-color: #E0E1DD;
 }
 
 /* Header */
 
 header {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
+    padding: 20px;
+    background-color: #B3AF8F;
 }
 
 header h1 {
     margin: 20px;
+    color: #E0E1DD;
+}
+
+.mugshot {
+    width: 100px;
+    height: 100px;
+    background: url(../src/img/pfp.png) no-repeat center / cover;
+    border-radius: 50%;
 }
 
 /* Navbar */
@@ -47,7 +57,7 @@ header h1 {
 .nav-items a {
     text-decoration: none;
     padding: 14px 20px;
-    color: #1f1f1f;
+    color: #0D1B2A;
     cursor: pointer;
 }
 
@@ -56,20 +66,25 @@ header h1 {
     height: 47.5px;
     border: none;
     cursor: pointer;
-    background: url(../src/svg/open.svg) no-repeat center/35px;
+    background: url(../src/svg/open.svg) no-repeat center / 35px;
     transition: .3s ease;
 }
 
 #toggle:hover {
-    background-color: #eaeaea;
+    background: #415A77 url(../src/svg/open_wht.svg) no-repeat center / 35px;
 }
 
 #toggle.open {
-    background: url(../src/svg/close.svg) no-repeat center/35px;
+    background: url(../src/svg/close.svg) no-repeat center / 35px;
+}
+
+#toggle.open:hover {
+    background: #415A77 url(../src/svg/close_wht.svg) no-repeat center / 35px;
 }
 
 .nav-items a:hover {
-    background-color: #eaeaea;
+    background-color: #415A77;
+    color: #E0E1DD;
 }
 
 .coll-nav-items {
@@ -84,13 +99,14 @@ header h1 {
 .coll-nav-items a {
     text-decoration: none;
     padding: 14px 20px;
-    color: #1f1f1f;
+    color: #0D1B2A;
     width: 100%;
     text-align: center;
 }
 
 .coll-nav-items a:hover {
-    background-color: #eaeaea;
+    background-color: #415A77;
+    color: #E0E1DD;
 }
 
 @media (min-width: 800px) {
