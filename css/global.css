@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    padding: 0;
+    margin: 0px;
     min-height: 100vh;
     background-color: #fefefe;
 }
@@ -26,9 +26,15 @@ header h1 {
 
 #navbar {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    height: 47.5px;
+    transition: .3s ease;
+}
+
+#navbar.open {
+    height: 332.5px;
 }
 
 .nav-items {
@@ -41,11 +47,25 @@ header h1 {
 .nav-items a {
     text-decoration: none;
     padding: 14px 20px;
-    color: #3d3d3d;
+    color: #1f1f1f;
+    cursor: pointer;
 }
 
-#collapse {
-    
+#toggle {
+    width: 47.5px;
+    height: 47.5px;
+    border: none;
+    cursor: pointer;
+    background: url(../src/svg/open.svg) no-repeat center/35px;
+    transition: .3s ease;
+}
+
+#toggle:hover {
+    background-color: #eaeaea;
+}
+
+#toggle.open {
+    background: url(../src/svg/close.svg) no-repeat center/35px;
 }
 
 .nav-items a:hover {
@@ -55,19 +75,37 @@ header h1 {
 .coll-nav-items {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .coll-nav-items a {
     text-decoration: none;
     padding: 14px 20px;
-    color: #3d3d3d;
+    color: #1f1f1f;
     width: 100%;
     text-align: center;
 }
 
 .coll-nav-items a:hover {
     background-color: #eaeaea;
+}
+
+@media (min-width: 800px) {
+    .nav-items button{
+        display: none;
+    }
+
+    #navbar {
+        max-height: 47.5px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 800px) {
+    .nav-items a {
+        display: none;
+    }
 }

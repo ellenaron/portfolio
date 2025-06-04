@@ -1,0 +1,79 @@
+/* * {
+    outline: 1px solid red;
+} */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.munkak {
+    display: grid;
+    grid-template-areas: 
+        "one two"
+        "three three"
+        "four five";
+    grid-template-columns: auto auto;
+    gap: 30px;
+    padding: 30px;
+    max-width: 100%;
+}
+
+.card_one {
+    grid-area: one;
+}
+
+.card_two {
+    grid-area: two;
+}
+
+.card_three {
+    grid-area: three;
+}
+
+.card_four {
+    grid-area: four;
+}
+
+.card_five {
+    grid-area: five;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.2);
+    background-color: #eaeaea;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.ertekeles {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ertekeles > div {
+    background-color: #eaeaea;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    font-size: larger;
+}
+
+.ertekeles > div > .graph {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    float: left;
+    border-radius: 50%;
+}
