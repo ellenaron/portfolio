@@ -2,3 +2,256 @@
     outline: 1px solid red;
 } */
 
+/* Global */
+
+.card img {
+    width: 100%;
+}
+
+/* Large */
+
+.large-scale {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} 
+
+.large-scale p {
+    font-size: larger;
+}
+
+.large-scale .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.large-scale .cont-one {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #415A77;
+    padding: 20px 0px 20px 0px;
+}
+
+.large-scale .cont-one > .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 30vw;
+    color: #E0E1DD;
+}
+
+.large-scale .card-row-vawe {
+    aspect-ratio: 900 / 100;
+    width: 100%;
+    background: url(../src/svg/vawes/lg-blue-white.svg) no-repeat center / cover;
+}
+
+.large-scale .cont-two {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+}
+
+.large-scale .cont-two > .card {
+    width: 40vw;
+}
+
+.large-scale .card-rating-steps {
+    aspect-ratio: 900 / 100;
+    width: 100%;
+    background: url(../src/svg/vawes/lg-white-green.svg) no-repeat center / cover;
+}
+
+.large-scale .ratings {
+    background-color: #B3AF8F;
+    color: #E0E1DD;
+    padding: 20px;
+}
+
+.rating-conclusion-peaks {
+    aspect-ratio: 900 / 100;
+    width: 100%;
+    background: url(../src/svg/vawes/lg-green-dkblue.svg) no-repeat center / cover;
+}
+
+.large-scale .overall {
+    background-color: #1B263B;
+    padding: 20px;
+    color: #E0E1DD;
+}
+
+/* Medium */
+
+.medium-scale {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.medium-scale .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.medium-scale .cont-one {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    background-color: #415A77;
+    color: #E0E1DD;
+    padding: 20px 0px 20px 0px;
+}
+
+.medium-scale .cont-one > .card {
+    width: 40vw;
+}
+
+.medium-scale .md-blue-white {
+    aspect-ratio: 700 / 100;
+    width: 100%;
+    background: url(../src/svg/vawes/md-blue-white.svg) no-repeat center / cover;
+}
+
+.medium-scale .cont-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+}
+
+.medium-scale .cont-two > .card {
+    width: 80vw;
+}
+
+.md-white-dkblue {
+    aspect-ratio: 700 / 100;
+    width: 100%;
+    background: url(../src/svg/vawes/md-white-dkblue.svg) no-repeat center / cover;
+}
+
+.medium-scale .cont-three {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    background-color: #1B263B;
+    color: #E0E1DD;
+    padding: 20px 0px 20px 0px;
+}
+
+.medium-scale .cont-three > .card {
+    width: 40vw;
+}
+
+.md-dkblue-green {
+    aspect-ratio: 700 / 100;
+    width: 100%;
+    background: url(../src/svg/vawes/md-dkblue-green.svg) no-repeat center / cover;
+}
+
+.medium-scale .ratings {
+    background-color: #B3AF8F;
+    color: #E0E1DD;
+    padding: 20px;
+}
+
+.md-green-white {
+    aspect-ratio: 700 / 100;
+    width: 100%;
+    background: url(../src/svg/vawes/md-green-white.svg) no-repeat center / cover;
+}
+
+.medium-scale .overall {
+    padding: 20px;
+}
+
+/* Small */
+
+.small-scale {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.small-scale .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0px 20px 0px;
+    background-color: #415A77;
+    width: 100%;
+    color: #E0E1DD;
+}
+
+.small-scale .card {
+    width: 80vw;
+    margin: 10px;
+}
+
+.sm-blue-white {
+    aspect-ratio: 400 / 100;
+    width: 100%;
+    background: url(../src/svg/vawes/sm-blue-white.svg) no-repeat center / cover;
+}
+
+.small-scale .ratings {
+    padding: 20px;
+}
+
+.sm-white-green {
+    aspect-ratio: 400 / 100;
+    width: 100%;
+    background: url(../src/svg/vawes/sm-white-green.svg) no-repeat center / cover;
+}
+
+.small-scale .overall {
+    padding: 20px;
+    background-color: #B3AF8F;
+    color: #E0E1DD;
+}
+
+/* Views */
+
+@media (min-width: 1200px) {
+    .medium-scale {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .large-scale {
+        display: none;
+    }
+}
+
+@media (min-width: 800px) {
+    .small-scale {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .medium-scale {
+        display: none;
+    }
+}
