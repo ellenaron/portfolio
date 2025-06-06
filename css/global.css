@@ -41,6 +41,10 @@ header h1 {
     flex-direction: column;
     height: 47.5px;
     transition: .3s ease;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #E0E1DD;
 }
 
 #navbar.open {

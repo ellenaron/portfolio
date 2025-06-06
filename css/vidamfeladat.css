@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    transition: .3s ease;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+#darkmode {
+    width: 100px;
+    height: 50px;
+    border: none;
+    background: #242424 url(../src/svg/vidamfeladat/circlewhite.svg) no-repeat left center / 50px;
+    padding: 0;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease;
+}
+
+#darkmode span {
+    width: 50px;
+    height: 50px;
+    transition: .3s ease;
+}
+
+.lightico {
+    background: url(../src/svg/vidamfeladat/sunblk.svg) no-repeat center / 40px;
+}
+
+.darkico {
+    background: url(../src/svg/vidamfeladat/moonblk.svg) no-repeat center / 40px;
+}
+
+#darkmode.dark {
+    background: #fefefe url(../src/svg/vidamfeladat/circleblk.svg) no-repeat right center / 50px;
+    transition: .3s ease;
+}
+
+#darkmode.dark .lightico {
+    background: url(../src/svg/vidamfeladat/sunwhite.svg) no-repeat center / 40px;
+}
+
+#darkmode.dark .darkico {
+    background: url(../src/svg/vidamfeladat/moonwhite.svg) no-repeat center / 40px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.textchanger {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.textchanger p {
+    width: 100%;
+}
+
+.textcontrols {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 10px 0px 10px;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top button {
+    border: none;
+    padding: 12px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #242424;
+    color: #fefefe;
+    transition: .3s ease-in-out;
+}
+
+.top button:hover {
+    transform: scale(1.1);
+}
+
+.colorpicker {
+    display: grid;
+    grid-template-areas: "black blue" "red transparent";
+    gap: 10px;
+    width: 78px;
+    height: 78px;
+    margin: 0px 10px 0px 10px;
+}
+
+#blackbtn {
+    grid-area: "black";
+    border: none;
+    background-color: #242424;
+    border-radius: 10px;
+    transition: .3s ease;
+}
+
+#blackbtn:hover {
+    transform: scale(1.1);
+}
+
+#bluebtn {
+    grid-area: "blue";
+    border: none;
+    background-color: #4287f5;
+    border-radius: 10px;
+    transition: .3s ease;
+}
+
+#bluebtn:hover {
+    transform: scale(1.1);
+}
+
+#redbtn {
+    grid-area: "red";
+    border: none;
+    background-color: #e64b39;
+    border-radius: 10px;
+    transition: .3s ease;
+}
+
+#redbtn:hover {
+    transform: scale(1.1);
+}
+
+#transparentbtn {
+    grid-area: "transparent";
+    background-color: transparent;
+    border: none;
+    border: 1px solid #242424;
+    border-radius: 10px;
+    transition: .3s ease;
+}
+
+#transparentbtn:hover {
+    transform: scale(1.1);
+}
+
+.language {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px 0px 10px;
+}
+
+#englishbtn {
+    color: #242424;
+    padding: 12px 20px; 
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    background: transparent url(../src/img/vidamfeladat/unitedkingdom.svg) no-repeat center / cover;
+    transition: .3s ease;
+}
+
+#englishbtn:hover {
+    transform: scale(1.1);
+}
+
+#hungarianbtn {
+    color: #242424;
+    padding: 12px 20px; 
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    background: transparent url(../src/img/vidamfeladat/hungary.webp) no-repeat center / cover;
+    transition: .3s ease;
+}
+
+#hungarianbtn:hover {
+    transform: scale(1.1);
+}
+
+#germanbtn {
+    color: #242424;
+    padding: 12px 20px; 
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    background: transparent url(../src/img/vidamfeladat/germany.png) no-repeat center / cover;
+    transition: .3s ease;
+}
+
+#germanbtn:hover {
+    transform: scale(1.1);
+}
+
+.imagechanger {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.imgcont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#image {
+    border-radius: 10px;
+    width: 40%;
+}
+
+
+
+/* Dark mode css */
+
+body.dark {
+    color: white;
+    background-color: #242424;
+    transition: .3s ease;
+}
+
+.top button.dark {
+    background-color: #fefefe;
+    color: #242424;
+}
+
+#blackbtn.dark {
+    border: 1px solid white;
+}
+
+#transparentbtn.dark {
+    border: 1px solid #fefefe;
+}

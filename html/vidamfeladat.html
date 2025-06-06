@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidám feladat</title>
+    <link rel="stylesheet" href="../css/vidamfeladat.css">
+    <script defer src="../js/vidamfeladat.js"></script>
+    <script defer src="../js/vidamfeladat_darkmode.js"></script>
+</head>
+<body id="body">
+    <header>
+        <h1>Összefoglaló</h1>
+        <button id="darkmode">
+            <span class="lightico"></span>
+            <span class="darkico"></span>
+        </button>
+    </header>
+    <main>
+        <section class="textchanger">
+            <p id="text">Ez egy hosszú bekezdés, a szövegformázási lehetőségek erre vonatkoznak, az igazítás, színezés, a méretezés és a nyelvváltoztatás is.</p>
+            <div class="textcontrols">
+                <div class="buttons">
+                    <div class="top">
+                        <button id="leftalign">Balra</button>
+                        <button id="rightalign">Jobbra</button>
+                        <button id="centeralign">Középre</button>
+                        <button id="justify">Sorkizárt</button>
+                    </div>
+                    <div class="bottom">
+                        <input type="range" id="sizeinput" min="6" max="36" step="1">
+                        <span id="sizeoutput">20</span>
+                    </div>
+                </div>
+                <div class="colorpicker">
+                    <button id="blackbtn"></button>
+                    <button id="bluebtn"></button>
+                    <button id="redbtn"></button>
+                    <button id="transparentbtn"></button>
+                </div>
+                <div class="language">
+                    <button id="englishbtn">Angol</button>
+                    <button id="hungarianbtn">Magyar</button>
+                    <button id="germanbtn">Német</button>
+                </div>
+            </div>
+        </section>
+        <section class="imagechanger">
+            <div class="imgcont">
+                <img id="image" src="img/stockimage.jpg" alt="">
+            </div>
+            <div class="imgcontrols">
+                <tr>
+                    <td><input type="text" id="linkinput" placeholder="Link"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="widthinput" placeholder="Szélesség">
+                        <input type="text" id="heightinput" placeholder="Magasság">
+                    </td>
+                </tr>
+                <tr>
+                    <td><button id="imageoutput">Képkirak</button></td>
+                </tr>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
