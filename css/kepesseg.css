@@ -1,0 +1,31 @@
+html {
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+}
+html body {
+  margin: 0px;
+  min-height: 100vh;
+  background-color: #fefefe;
+}
+html body header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+}
+html body header h1 {
+  margin: 0px;
+}
+html body main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+html body main input {
+  border: 1px solid hsl(0, 0%, 42%);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: large;
+}/*# sourceMappingURL=style.css.map */

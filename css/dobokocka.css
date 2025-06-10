@@ -1,0 +1,57 @@
+html {
+  scroll-behavior: smooth;
+  font-family: "Trebuchet MS", sans-serif;
+}
+html body {
+  min-height: 100vh;
+  margin: 0px;
+}
+html body header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  background-color: hsl(207, 81%, 71%);
+}
+html body header h1 {
+  margin: 0;
+}
+html body main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+html body main h2 {
+  margin: 0;
+  padding: 20px;
+}
+html body main button {
+  background-color: hsl(207, 81%, 71%);
+  border: none;
+  border-radius: 6px;
+  padding: 14px 25px;
+  font-size: large;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.15s ease;
+}
+html body main button:hover {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+}
+html body main p {
+  margin: 0px;
+  padding: 20px;
+}
+html body main p span {
+  font-weight: bold;
+}
+html body main .imgcont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html body main .imgcont img {
+  width: 60%;
+}/*# sourceMappingURL=style.css.map */
